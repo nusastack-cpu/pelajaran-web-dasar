@@ -1,0 +1,71 @@
+/* CSS GRID STYLING */
+
+body { font-family: sans-serif; background-color: #f1f5f9; padding: 20px; }
+
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* 1. BASIC GRID */
+.basic {
+    display: grid;
+    /* Membuat 3 kolom dengan ukuran 1 fraction (sama rata) secara repetitif */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #3b82f6;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+/* 2. GRID LAYOUT AREAS */
+.grid-layout {
+    display: grid;
+    /* Mendefinisikan kolom dan baris */
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    /* Menamai area untuk penempatan yang mudah */
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+}
+
+/* Memetakan elemen ke nama area yang telah dibuat */
+.header-zone { grid-area: header; background: #e11d48; }
+.nav-zone    { grid-area: nav;    background: #fbbf24; }
+.main-zone   { grid-area: main;   background: #34d399; min-height: 200px; }
+.footer-zone { grid-area: footer; background: #64748b; }
+
+.grid-layout div {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Media Query untuk Responsivitas (Mobile) */
+@media (max-width: 600px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+    .basic {
+        grid-template-columns: 1fr;
+    }
+}

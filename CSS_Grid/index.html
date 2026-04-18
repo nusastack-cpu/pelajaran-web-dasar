@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery CSS: Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mastery CSS: Grid Layout</h1>
+        <p>Sistem tata letak dua dimensi (Baris & Kolom) yang revolusioner.</p>
+    </header>
+
+    <main>
+        <!-- 1. BASIC GRID -->
+        <section>
+            <h2>1. Dasar CSS Grid</h2>
+            <p>Membuat 3 kolom otomatis dengan <code>grid-template-columns</code>.</p>
+            <div class="grid-container basic">
+                <div class="card">A</div>
+                <div class="card">B</div>
+                <div class="card">C</div>
+                <div class="card">D</div>
+                <div class="card">E</div>
+                <div class="card">F</div>
+            </div>
+        </section>
+
+        <!-- 2. GRID AREA (LAYOUT) -->
+        <section>
+            <h2>2. Pengaturan Layout Halaman</h2>
+            <p>Menggunakan <code>grid-template-areas</code> untuk membagi zona website.</p>
+            <div class="grid-layout">
+                <div class="header-zone">HEADER</div>
+                <div class="nav-zone">NAV</div>
+                <div class="main-zone">MAIN CONTENT</div>
+                <div class="side-zone">SIDEBAR</div>
+                <div class="footer-zone">FOOTER</div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

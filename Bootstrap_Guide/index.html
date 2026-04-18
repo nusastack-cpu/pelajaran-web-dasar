@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery Bootstrap: Kerangka Kerja UI</title>
+    <!-- MENGHUBUNGKAN BOOTSTRAP VIA CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mastery Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Materi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tugas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-primary">Mastery Bootstrap</h1>
+            <p class="lead">Cara cepat membangun website modern yang responsif tanpa menulis banyak CSS manual.</p>
+        </header>
+
+        <!-- GRID SYSTEM -->
+        <section class="mb-5">
+            <h2 class="h3 border-bottom pb-2 mb-4">1. Grid System (Responsive)</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white border rounded shadow-sm">
+                        <h4>Kolom 1</h4>
+                        <p>Di layar HP ini akan menjadi satu kolom penuh, di Laptop akan berbagi ruang.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white border rounded shadow-sm">
+                        <h4>Kolom 2</h4>
+                        <p>Bootstrap menggunakan sistem 12 kolom untuk mengatur tata letak.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white border rounded shadow-sm">
+                        <h4>Kolom 3</h4>
+                        <p>Sangat mudah membuat website yang tampil bagus di segala perangkat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPONENTS -->
+        <section>
+            <h2 class="h3 border-bottom pb-2 mb-4">2. Komponen Bootstrap</h2>
+            <div class="row">
+                <!-- CARD -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-header bg-success text-white">Info Terkini</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar Bootstrap Mudah</h5>
+                            <p class="card-text">Gunakan berbagai komponen siap pakai seperti Card, Badge, dan Modal.</p>
+                            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FORM -->
+                <div class="col-md-6">
+                    <div class="card shadow p-4">
+                        <h5>Formulir Elegan</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Email Anda</label>
+                                <input type="email" class="form-control" placeholder="nama@email.com">
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Kirim Sekarang</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- BOOTSTRAP JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

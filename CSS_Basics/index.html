@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery CSS: Dasar-Dasar CSS</title>
+    <!-- MENGGUNAKAN CSS EKSTERNAL (CARA TERBAIK) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mastery CSS: Dasar-Dasar</h1>
+        <p>Belajar cara mempercantik website dengan CSS (Cascading Style Sheets).</p>
+    </header>
+
+    <main>
+        <!-- 1. SELEKTOR -->
+        <section id="selectors">
+            <h2>1. Selektor (Tag, Class, ID)</h2>
+            <p>Selektor digunakan untuk memilih elemen mana yang ingin diberi gaya.</p>
+            <div class="box">Ini adalah elemen dengan <strong>class="box"</strong></div>
+            <div id="unik">Ini adalah elemen dengan <strong>id="unik"</strong></div>
+        </section>
+
+        <!-- 2. WARNA & TIPOGRAFI -->
+        <section id="colors">
+            <h2>2. Warna & Tipografi</h2>
+            <p class="text-blue">Teks ini berwarna biru memakai sistem nama warna.</p>
+            <p class="text-hex">Teks ini berwarna memakai kode Hex (#ff5733).</p>
+            <p class="text-rgb">Teks ini berwarna memakai sistem RGB.</p>
+        </section>
+
+        <!-- 3. BOX MODEL -->
+        <section id="box-model">
+            <h2>3. Memahami Box Model</h2>
+            <p>Setiap elemen web adalah sebuah kotak. Box model terdiri dari: Content, Padding, Border, dan Margin.</p>
+            <div class="box-visual">
+                <div class="padding-zone">
+                    <div class="content-zone">
+                        KOTAK KONTEN
+                    </div>
+                </div>
+            </div>
+            <ul class="box-info">
+                <li><strong>Content:</strong> Isi dari elemen (teks/gambar).</li>
+                <li><strong>Padding:</strong> Jarak antara konten dan border (di dalam).</li>
+                <li><strong>Border:</strong> Garis tepi elemen.</li>
+                <li><strong>Margin:</strong> Jarak antara elemen dengan elemen lain (di luar).</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* FLEXBOX STYLING */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8fafc;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 { border-left: 5px solid #4f46e5; padding-left: 10px; margin-top: 30px; }
+
+/* CONTAINER UTAMA FLEX */
+.flex-container {
+    display: flex; /* WAJIB ADA UNTUK AKTIFKAN FLEXBOX */
+    background-color: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 10px; /* Jarak antar item */
+}
+
+/* ITEM DI DALAM FLEX */
+.item {
+    background-color: #4f46e5;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    min-width: 50px;
+    text-align: center;
+}
+
+/* MODIFIKASI ARRAH */
+.row { flex-direction: row; }
+.column { flex-direction: column; }
+
+/* MODIFIKASI PERATAAN */
+.between { justify-content: space-between; }
+
+/* CENTERING TRICK */
+.center-all {
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #cbd5e1;
+}

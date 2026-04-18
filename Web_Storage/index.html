@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery JavaScript: Web Storage</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 40px; background: #fdf2f8; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 500px; margin: 0 auto; text-align: center; }
+        h1 { color: #db2777; }
+        input { width: 80%; padding: 12px; margin: 10px 0; border: 2px solid #f9a8d4; border-radius: 8px; font-size: 1rem; }
+        button { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; margin: 5px; font-weight: bold; }
+        .btn-save { background: #db2777; color: white; }
+        .btn-clear { background: #94a3b8; color: white; }
+        #output { margin-top: 20px; font-size: 1.2rem; color: #1e293b; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Mastery: Web Storage</h1>
+        <p>Cara menyimpan data secara permanen di browser pengguna (meskipun halaman di-refresh).</p>
+
+        <input type="text" id="input-data" placeholder="Masukkan sesuatu untuk disimpan...">
+        <br>
+        <button id="btn-save" class="btn-save">Simpan ke Browser</button>
+        <button id="btn-clear" class="btn-clear">Hapus Data</button>
+
+        <div id="output">Data belum ada.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

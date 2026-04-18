@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery HTML: Tables (Tabel)</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f1f5f9;
+            --border-color: #e2e8f0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #f8fafc;
+        }
+        h1 { color: var(--primary-color); text-align: center; }
+        .module { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); margin-bottom: 2rem; }
+        
+        /* CSS untuk Tabel agar Terlihat Bagus */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+        th { background-color: var(--primary-color); color: white; }
+        tr:nth-child(even) { background-color: var(--secondary-color); }
+        tr:hover { background-color: #dbeafe; transition: 0.3s; }
+
+        .code-snippet { background: #1e293b; color: #f8fafc; padding: 15px; border-radius: 8px; font-family: monospace; overflow-x: auto; }
+    </style>
+</head>
+<body>
+
+    <h1>Mastery HTML: Tables (Tabel Daya Tampung Data)</h1>
+
+    <!-- 1. STRUKTUR DASAR -->
+    <div class="module">
+        <h2>1. Struktur Dasar Tabel</h2>
+        <p>Tabel terdiri dari baris (tr), judul kolom (th), dan data (td).</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Pekerjaan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Andi</td>
+                    <td>25</td>
+                    <td>Web Developer</td>
+                </tr>
+                <tr>
+                    <td>Budi</td>
+                    <td>30</td>
+                    <td>Data Scientist</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2. COLSPAN & ROWSPAN -->
+    <div class="module">
+        <h2>2. Penggabungan Kolom & Baris (Colspan & Rowspan)</h2>
+        <p><code>colspan</code> untuk menggabungkan kolom ke samping, <code>rowspan</code> untuk menggabungkan baris ke bawah.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Kategori</th>
+                    <th colspan="2">Detail Barang</th>
+                </tr>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Elektronik</td>
+                    <td>Laptop</td>
+                    <td>Rp 15.000.000</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>Rp 250.000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td colspan="2" style="text-align: center;"><strong>Rp 15.250.000</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 3. BAGIAN SEMANTIK TABEL -->
+    <div class="module">
+        <h2>3. Bagian Semantik: Thead, Tbody, Tfoot</h2>
+        <p>Menggunakan tag ini membantu aksesibilitas dan styling yang lebih baik.</p>
+        <div class="code-snippet">
+            &lt;table&gt;<br>
+            &nbsp;&nbsp;&lt;thead&gt;...&lt;/thead&gt; &lt;!-- Kepala Tabel --&gt;<br>
+            &nbsp;&nbsp;&lt;tbody&gt;...&lt;/tbody&gt; &lt;!-- Isi Tabel --&gt;<br>
+            &nbsp;&nbsp;&lt;tfoot&gt;...&lt;/tfoot&gt; &lt;!-- Kaki Tabel --&gt;<br>
+            &lt;/table&gt;
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* SneakPeak Custom Style 99% Clone */
+
+:root {
+    --primary-black: #000000;
+    --sneak-red: #dc3545;
+    --light-bg: #f8fafc;
+    --text-muted: #64748b;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-black);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .fw-black {
+    font-weight: 900 !important;
+    letter-spacing: -1px;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem !important;
+    color: var(--primary-black) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--sneak-red) !important;
+}
+
+/* HERO SECTION */
+#header {
+    background-color: white;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-img {
+    max-height: 500px;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+    transition: 0.5s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+/* CARDS */
+.product-card {
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.product-card img {
+    transition: 0.5s;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+/* BUTTONS */
+.btn-dark {
+    background-color: var(--primary-black);
+    padding: 0.8rem 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn-outline-dark {
+    padding: 0.8rem 2.5rem;
+    font-weight: 700;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 991px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+}
+
+/* FOOTER */
+footer h3 {
+    letter-spacing: -2px;
+}
+
+footer a:hover {
+    color: var(--sneak-red) !important;
+}
+
+/* AI API CODE NOTE (DUMMY) */
+/* Kode ini disiapkan untuk integrasi AI di masa depan sesuai permintaan */
+/* Lihat script.js untuk implementasi logic 'MASUKKANAPI' */

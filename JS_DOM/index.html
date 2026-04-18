@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery JavaScript: DOM Manipulation</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 40px; background: #eef2f7; text-align: center; }
+        .container { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-width: 500px; margin: 0 auto; }
+        h1 { color: #1e293b; }
+        .card { border: 2px solid #cbd5e1; padding: 20px; margin: 20px 0; border-radius: 12px; transition: 0.3s; }
+        
+        button { padding: 10px 20px; background: #3b82f6; color: white; border: none; border-radius: 8px; cursor: pointer; margin: 5px; }
+        button:hover { background: #2563eb; }
+        
+        input { padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; margin-bottom: 10px; width: 80%; }
+        
+        #box { width: 100px; height: 100px; background: #94a3b8; margin: 20px auto; border-radius: 10px; transition: 0.3s; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mastery JS: DOM</h1>
+        <p>DOM (Document Object Model) adalah cara JS berinteraksi dengan HTML.</p>
+
+        <!-- 1. MERUBAH TEKS -->
+        <div class="card">
+            <h2 id="judul">Judul Asli</h2>
+            <button id="btn-teks">Ubah Judul</button>
+        </div>
+
+        <!-- 2. MERUBAH STYLE -->
+        <div class="card">
+            <div id="box"></div>
+            <button id="btn-warna">Ubah Warna Box</button>
+            <button id="btn-bulat">Togle Bulat</button>
+        </div>
+
+        <!-- 3. INPUT INTERACTION -->
+        <div class="card">
+            <input type="text" id="input-nama" placeholder="Ketik nama Anda...">
+            <p id="sapaan">Halo, Penguna!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery HTML: Semantic Tags (Struktur SEO)</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f0f2f5; }
+        
+        /* Gaya Visual untuk Membedakan Tag Semantik */
+        header, nav, main, section, article, aside, footer {
+            padding: 15px;
+            margin: 10px;
+            border: 2px dashed #94a3b8;
+            border-radius: 8px;
+            background: white;
+            position: relative;
+        }
+
+        /* Label Tag untuk Pembelajaran */
+        header::before { content: "<header>"; color: #ef4444; font-weight: bold; position: absolute; top: -10px; left: 10px; background: white; padding: 0 5px; }
+        nav::before { content: "<nav>"; color: #f59e0b; font-weight: bold; position: absolute; top: -10px; left: 10px; background: white; padding: 0 5px; }
+        main::before { content: "<main>"; color: #10b981; font-weight: bold; position: absolute; top: -10px; left: 10px; background: white; padding: 0 5px; }
+        section::before { content: "<section>"; color: #3b82f6; font-weight: bold; position: absolute; top: -10px; left: 10px; background: white; padding: 0 5px; }
+        article::before { content: "<article>"; color: #8b5cf6; font-weight: bold; position: absolute; top: -10px; left: 10px; background: white; padding: 0 5px; }
+        aside::before { content: "<aside>"; color: #ec4899; font-weight: bold; position: absolute; top: -10px; left: 10px; background: white; padding: 0 5px; }
+        footer::before { content: "<footer>"; color: #64748b; font-weight: bold; position: absolute; top: -10px; left: 10px; background: white; padding: 0 5px; }
+
+        .container { max-width: 1000px; margin: 20px auto; }
+        .layout { display: grid; grid-template-columns: 3fr 1fr; gap: 10px; }
+        
+        h1, h2 { margin-top: 5px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 20px; }
+        nav a { text-decoration: none; color: #1e293b; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER: Kepala Website -->
+        <header>
+            <h1>Website Belajar Semantic HTML</h1>
+            <p>Memahami struktur yang disukai oleh Google dan Mesin Pencari (SEO).</p>
+        </header>
+
+        <!-- NAV: Navigasi Utama -->
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <div class="layout">
+            <!-- MAIN: Konten Utama yang Unik -->
+            <main>
+                <h2>Konten Utama Website</h2>
+                
+                <!-- SECTION: Bagian dari dokumen -->
+                <section>
+                    <h3>Artikel Populer</h3>
+                    
+                    <!-- ARTICLE: Konten mandiri yang bisa berdiri sendiri -->
+                    <article>
+                        <h4>Cara Membuat Web Responsif</h4>
+                        <p>Web responsif adalah web yang tampilannya menyesuaikan ukuran layar perangkat...</p>
+                        <time datetime="2026-04-18">18 April 2026</time>
+                    </article>
+
+                    <article>
+                        <h4>Pentingnya Semantic HTML</h4>
+                        <p>Tag semantik membantu browser dan mesin pencari memahami arti dari konten Anda...</p>
+                    </article>
+                </section>
+            </main>
+
+            <!-- ASIDE: Konten Sampingan (Sidebar) -->
+            <aside>
+                <h3>Sidebar</h3>
+                <p>Iklan, Kategori, atau Link Terkait.</p>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- FOOTER: Kaki Website -->
+        <footer>
+            <p>&copy; 2026 Hak Cipta Dilindungi.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

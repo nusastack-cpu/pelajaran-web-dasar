@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery HTML: Forms (Formulir)</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --bg: #f1f5f9;
+        }
+        body { font-family: sans-serif; background-color: var(--bg); padding: 40px; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        h1 { color: var(--primary); text-align: center; }
+        
+        form { display: flex; flex-direction: column; gap: 15px; }
+        label { font-weight: bold; margin-bottom: 5px; color: #475569; }
+        
+        input[type="text"], input[type="email"], input[type="password"], select, textarea {
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        .radio-group, .checkbox-group { display: flex; gap: 15px; align-items: center; }
+        
+        button {
+            padding: 12px;
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover { background-color: #2563eb; }
+        
+        fieldset { border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; margin-bottom: 10px; }
+        legend { font-weight: bold; color: var(--accent); padding: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mastery HTML: Forms</h1>
+        <p>Formulir adalah cara utama website menerima input dari pengguna.</p>
+
+        <form action="#" method="POST">
+            <!-- INPUT TEXT & EMAIL -->
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="user_nama" placeholder="Contoh: Budi Santoso" required>
+
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="user_email" placeholder="nama@email.com" required>
+
+            <!-- SELECT OPTION -->
+            <label for="provinsi">Provinsi:</label>
+            <select id="provinsi" name="provinsi">
+                <option value="jakarta">DKI Jakarta</option>
+                <option value="jabar">Jawa Barat</option>
+                <option value="jateng">Jawa Tengah</option>
+                <option value="jatim">Jawa Timur</option>
+            </select>
+
+            <!-- RADIO BUTTONS -->
+            <fieldset>
+                <legend>Jenis Kelamin</legend>
+                <div class="radio-group">
+                    <input type="radio" id="pria" name="gender" value="pria">
+                    <label for="pria">Laki-laki</label>
+                    <input type="radio" id="wanita" name="gender" value="wanita">
+                    <label for="wanita">Perempuan</label>
+                </div>
+            </fieldset>
+
+            <!-- CHECKBOX -->
+            <fieldset>
+                <legend>Hobi (Bisa pilih lebih dari satu)</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="coding" name="hobi" value="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="gaming" name="hobi" value="gaming">
+                    <label for="gaming">Gaming</label>
+                    <input type="checkbox" id="musik" name="hobi" value="musik">
+                    <label for="musik">Musik</label>
+                </div>
+            </fieldset>
+
+            <!-- TEXTAREA -->
+            <label for="pesan">Pesan Tambahan:</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+
+            <!-- SUBMIT BUTTON -->
+            <button type="submit">Kirim Formulir</button>
+        </form>
+    </div>
+
+</body>
+</html>

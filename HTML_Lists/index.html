@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastery HTML: Lists (Daftar)</title>
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --accent-color: #818cf8;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; }
+        h2 { margin-top: 2rem; color: #334155; }
+        .example-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            margin: 1rem 0;
+        }
+        code {
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+        }
+        .note {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mastery HTML: Lists (Daftar)</h1>
+    <p>Selamat datang di modul pembelajaran pertama! Di sini kita akan mempelajari semua jenis daftar di HTML secara mendalam.</p>
+
+    <div class="note">
+        <strong>PENTING:</strong> Daftar digunakan untuk mengelompokkan item yang memiliki hubungan satu sama lain.
+    </div>
+
+    <!-- 1. UNORDERED LIST (Daftar Tidak Berurutan) -->
+    <section>
+        <h2>1. Unordered List (<code>&lt;ul&gt;</code>)</h2>
+        <p>Digunakan untuk daftar yang urutannya tidak penting. Biasanya menggunakan simbol bullet.</p>
+        <div class="example-box">
+            <ul>
+                <li>Nasi Goreng</li>
+                <li>Sate Ayam</li>
+                <li>Gado-gado</li>
+                <li>Rendang</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 2. ORDERED LIST (Daftar Berurutan) -->
+    <section>
+        <h2>2. Ordered List (<code>&lt;ol&gt;</code>)</h2>
+        <p>Digunakan untuk daftar yang memiliki urutan khusus (langkah-langkah, ranking, dll).</p>
+        <div class="example-box">
+            <ol>
+                <li>Siapkan bahan makanan</li>
+                <li>Cuci bahan hingga bersih</li>
+                <li>Masak dengan api sedang</li>
+                <li>Sajikan selagi hangat</li>
+            </ol>
+        </div>
+        <p>Kita juga bisa mengubah tipe angkanya (A, i, I, dll) menggunakan atribut <code>type</code>.</p>
+        <div class="example-box">
+            <ol type="A">
+                <li>Opsi Pertama</li>
+                <li>Opsi Kedua</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 3. DESCRIPTION LIST (Daftar Deskripsi) -->
+    <section>
+        <h2>3. Description List (<code>&lt;dl&gt;</code>)</h2>
+        <p>Digunakan untuk istilah dan definisinya (seperti kamus).</p>
+        <div class="example-box">
+            <dl>
+                <dt><strong>HTML</strong></dt>
+                <dd>HyperText Markup Language - Bahasa standar untuk membuat halaman web.</dd>
+                
+                <dt><strong>CSS</strong></dt>
+                <dd>Cascading Style Sheets - Digunakan untuk mengatur tampilan visual web.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- 4. NESTED LIST (Daftar Bersarang) -->
+    <section>
+        <h2>4. Nested List (Daftar di Dalam Daftar)</h2>
+        <p>Sangat berguna untuk membuat struktur menu atau kategori.</p>
+        <div class="example-box">
+            <ul>
+                <li>Minuman Dingin
+                    <ul>
+                        <li>Es Teh</li>
+                        <li>Es Jeruk</li>
+                        <li>Jus Alpukat</li>
+                    </ul>
+                </li>
+                <li>Minuman Panas
+                    <ul>
+                        <li>Kopi Hitam</li>
+                        <li>Teh Manis Panas</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; color: #64748b;">Dibuat untuk Pembelajaran Web Lengkap - 2026</p>
+    </footer>
+
+</body>
+</html>

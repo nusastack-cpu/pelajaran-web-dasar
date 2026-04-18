@@ -1,0 +1,80 @@
+/* CSS DASAR */
+
+body {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* 1. SELEKTOR */
+.box {
+    background-color: white;
+    border: 2px solid #3b82f6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#unik {
+    color: #b91c1c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* 2. WARNA */
+.text-blue { color: blue; }
+.text-hex { color: #ff5733; }
+.text-rgb { color: rgb(46, 204, 113); }
+
+/* 3. BOX MODEL VISUALIZATION */
+.box-visual {
+    background-color: #ef4444; /* Margin Color Idea */
+    padding: 20px; /* This acts as margin in our visual */
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.padding-zone {
+    background-color: #22c55e; /* Padding Color */
+    padding: 30px;
+    border: 5px dashed black; /* Border */
+}
+
+.content-zone {
+    background-color: #3b82f6; /* Content Color */
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box-info {
+    list-style: none;
+    padding: 0;
+}
+
+.box-info li {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.box-info li::before {
+    content: "â€¢";
+    color: #1e3a8a;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
